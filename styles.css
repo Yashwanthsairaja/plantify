@@ -11,7 +11,7 @@ body {
 /* Header styles */
 header {
     background-color: #45a049;
-    color: #00ac45;
+    color: #fff;
     padding: 10px 0;
 }
 
@@ -39,16 +39,6 @@ nav ul li {
 nav a {
     text-decoration: none;
     color: #fff;
-}
-
-/* Hero section styles */
-.hero {
-    background-image: url('hero-background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 150px 0;
 }
 
 /* Features section styles */
