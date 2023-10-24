@@ -10,12 +10,12 @@ box-sizing: border-box;
 font-family: "Poppins", sans-serif;
 }
 :root {
---background-color1: #96ddb3;
---background-color2: #6bcf93;
---background-color3: #2bba65;
---background-color4: #00ac45;
---primary-color: #4b49ac;
---secondary-color: #0c007d;
+--background-color1: #fafaff;
+--background-color2: #ffffff;
+--background-color3: #ededed;
+--background-color4: #cad7fda4;
+--primary-color: #00ac45;
+--secondary-color: #007830;
 --Border-color: #3f0097;
 --one-use-color: #3f0097;
 --two-use-color: #5500cb;
