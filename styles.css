@@ -14,14 +14,7 @@ header {
     color: #00ac45;
     padding: 10px 0;
 }
-/* Hero section styles */
-.hero {
-    background-image: url('https://github.com/Yashwanthsairaja/plantify/blob/main/homeplant.png');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 150px 0;
-}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
