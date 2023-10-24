@@ -1,0 +1,26 @@
+/* Your CSS styling here */
+
+/* Style for dashboard statistics */
+.dashboard-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.stat {
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.stat h2 {
+    font-size: 18px;
+}
+
+/* Style for plant list */
+.plant-list {
+    margin: 20px;
+}
+
+/* Additional styling as needed */
