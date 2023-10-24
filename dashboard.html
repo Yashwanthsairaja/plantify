@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantify Dashboard</title>
-    <link rel="stylesheet" href="dashmain.css">
-    <link rel="stylesheet" href="dashresp.css">
+    <link rel="stylesheet" href="dashstyle.css">
 </head>
-
 <body>
     <header>
         <div class="logosec">
@@ -22,26 +19,9 @@
     <div class="main-container">
         <div class="navcontainer">
             <nav class="nav">
-                <div class="nav-upper-options">
-                    <!-- Navigation options (Dashboard, Services, Contact, etc.) -->
-                    <div class="nav-option option1">
-                        <!-- You can add icons and text for each link -->
-                    </div>
-                    <!-- Add more navigation options as needed -->
-                </div>
-                <!-- User-specific options (Profile, Settings, Logout) -->
-                <div class="nav-option option5">
-                    <!-- Add user profile icon and text -->
-                </div>
-                <div class="nav-option option6">
-                    <!-- Add settings icon and text -->
-                </div>
-                <div class="nav-option logout">
-                    <!-- Add logout icon and text -->
-                </div>
+                <!-- Navigation options and user-specific options -->
             </nav>
         </div>
-
         <div class="main">
             <div class="searchbar2">
                 <input type="text" name="" id="" placeholder="Search">
@@ -50,12 +30,32 @@
                 </div>
             </div>
 
-            <!-- Content for the Dashboard (similar to the template) -->
-            <!-- You can add boxes, reports, and other dashboard content here -->
+            <!-- Dashboard content -->
+            <div class="dashboard-content">
+                <div class="dashboard-stats">
+                    <div class="stat">
+                        <h2>Active Plants</h2>
+                        <p id="activePlants">0</p>
+                    </div>
+                    <div class="stat">
+                        <h2>Reminders Set</h2>
+                        <p id="remindersSet">0</p>
+                    </div>
+                    <div class="stat">
+                        <h2>Plants with Infection</h2>
+                        <p id="plantsWithInfection">0</p>
+                    </div>
+                </div>
+                <div class="plant-list">
+                    <h2>Plants</h2>
+                    <ul id="plantList">
+                        <!-- Plant list will be dynamically generated here -->
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 
-    <script src="./index.js"></script>
+    <script src="dashboard.js"></script>
 </body>
-
 </html>
