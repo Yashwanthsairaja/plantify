@@ -50,6 +50,7 @@ nav a {
 .feature {
     text-align: center;
     margin: 20px;
+    background-image:url('homeplant.png');
 }
 
 .feature img {
