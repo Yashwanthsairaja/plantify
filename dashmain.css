@@ -14,11 +14,11 @@ font-family: "Poppins", sans-serif;
 --background-color2: #ffffff;
 --background-color3: #ededed;
 --background-color4: #cad7fda4;
---primary-color: #00ac45;
---secondary-color: #007830;
+--primary-color: #4b49ac;
+--secondary-color: #0c007d;
 --Border-color: #3f0097;
---one-use-color: #3f0097;
---two-use-color: #5500cb;
+--one-use-color: #00ac45;
+--two-use-color: #00ac45;
 }
 body {
 background-color: var(--background-color4);
