@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *
 {
@@ -30,7 +29,7 @@ header .logo
   position: relative;
   width: 60px;
   height: 60px;
-  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background: url('pic_4.png');
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
@@ -38,7 +37,7 @@ header .logo
 }
 .toggle.active
 {
-  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background: url(pic_4.png');
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
