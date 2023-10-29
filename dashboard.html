@@ -4,53 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantify Dashboard</title>
-    <link rel="stylesheet" href="dashmain.css">
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">Plantify</div>
-        <nav class="menu">
+        <div class="menu">
             <ul>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="myplants.html">My Plants</a></li>
-                <li><a href="setreminders.html">Set Reminders</a></li>
-                <li><a href="diagnosis.html">Diagnosis</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="leaderboard.html">Leaderboard</a></li>
-                <li><a href="index.html">Logout</a></li>
+                <li><a href="index.html">Home</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <main>
-        <section class="left-panel">
+        <div class="left-panel">
             <div class="nav-options">
                 <a href="myplants.html">My Plants</a>
-                <a href="setreminders.html">Set Reminders</a>
+                <a href="reminders.html">Set Reminders</a>
                 <a href="diagnosis.html">Diagnosis</a>
                 <a href="community.html">Community</a>
                 <a href="leaderboard.html">Leaderboard</a>
+                <a href="index.html">Logout</a>
             </div>
-        </section>
-        <section class="right-panel">
+        </div>
+        <div class="right-panel">
             <div class="dashboard-cards">
-                <div class="card active-plants">
+                <div class="card">
                     <h2>Active Plants</h2>
-                    <p id="active-plants-count">20</p>
+                    <p>25</p>
                 </div>
-                <div class="card active-reminders">
+                <div class="card">
                     <h2>Active Reminders</h2>
-                    <p id="active-reminders-count">7</p>
+                    <p>7</p>
                 </div>
-                <div class="card plants-on-diagnosis">
+                <div class="card">
                     <h2>Plants on Diagnosis</h2>
-                    <p id="plants-on-diagnosis-count">3</p>
+                    <p>3</p>
                 </div>
             </div>
-            <div class="attention-needed-plants">
-                <!-- Plant cards that need attention will be added dynamically -->
+            <div class="plant-cards">
+                <div class="plant-card" onclick="location.href='plant-details.html';">
+                    <img src="plant1.jpg" alt="Plant 1">
+                    <h3>Spider Plant</h3>
+                    <p>Needs water in 2 days</p>
+                </div>
+                <div class="plant-card" onclick="location.href='plant-details.html';">
+                    <img src="plant2.jpg" alt="Plant 2">
+                    <h3>Aloe Vera</h3>
+                    <p>Needs fertilizer today</p>
+                </div>
+                <div class="plant-card" onclick="location.href='plant-details.html';">
+                    <img src="plant3.jpg" alt="Plant 3">
+                    <h3>Fern</h3>
+                    <p>Needs water in 3 days</p>
+                </div>
+                <!-- Add more plant cards here -->
             </div>
-        </section>
+        </div>
     </main>
-    <script src="dashboard.js"></script>
 </body>
 </html>
