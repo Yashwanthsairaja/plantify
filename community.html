@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Forum</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ForumName</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Create Post</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+ 
+    <!-- Post List Section -->
+    <section id="post-list" class="container mt-5">
+        <h2 class="text-center mb-4">Latest Posts</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Title 1</h5>
+                        <p class="card-text">Post content goes here.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Title 2</h5>
+                        <p class="card-text">Post content goes here.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Create Post Section -->
+    <section id="create-post" class="container mt-5">
+        <h2 class="text-center mb-4">Create a New Post</h2>
+        <form id="createPostForm">
+            <div class="form-group">
+                <label for="postTitle">Title:</label>
+                <input type="text" class="form-control" id="postTitle" placeholder="Enter post title" required>
+            </div>
+            <div class="form-group">
+                <label for="postContent">Content:</label>
+                <textarea class="form-control" id="postContent" placeholder="Enter post content" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Post</button>
+        </form>
+    </section>
+ 
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
