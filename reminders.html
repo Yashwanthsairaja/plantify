@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Reminders - Plantify</title>
+    <link rel="stylesheet" href="reminders.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Plantify</div>
+        <div class="menu">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="myplants.html">My Plants</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="left-panel">
+            <div class="nav-options">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="myplants.html">My Plants</a>
+                <a href="reminders.html" class="active">Set Reminders</a>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h1>Set Reminders</h1>
+            <div class="reminder-form">
+                <label for="plant-select">Select a Plant:</label>
+                <select id="plant-select">
+                    <!-- Add plant options here -->
+                </select>
+                <label for="reminder-type">Select Reminder Type:</label>
+                <select id="reminder-type">
+                    <option value="watering">Watering</option>
+                    <option value="fertilizing">Fertilizing</option>
+                </select>
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="due-date">
+                <button id="set-reminder-btn">Set Reminder</button>
+            </div>
+        </div>
+    </main>
+    <script src="reminders.js"></script>
+</body>
+</html>
