@@ -57,6 +57,12 @@ main {
     width: 250px;
     height: 100%;
     padding: 20px;
+    bottom: 0; /* Extend to the bottom of the screen */
+    box-shadow: 1px 1px 10px rgba(198, 189, 248, 0.825);
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: space-between; /* Push items to the top and bottom */
+    overflow-y: auto; /* Add scrollbar if content overflows */
 }
 
 .left-panel .nav-options a {
