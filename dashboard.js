@@ -1,25 +1,29 @@
-// Sample static data
-const staticData = {
+// Simulated data (you can replace this with actual data)
+const data = {
     activePlants: 20,
-    remindersSet: 7,
-    plantsWithInfection: 3,
-    plantList: [
-        { name: 'Spider Plant', status: 'Healthy' },
-        { name: 'Aloe Vera', status: 'Healthy' },
-        { name: 'Fern', status: 'Infection' },
-        { name: 'Snake Plant', status: 'Healthy' },
-        { name: 'Peace Lily', status: 'Infection' },
-    ]
+    activeReminders: 7,
+    plantsOnDiagnosis: 3,
+    attentionNeededPlants: [
+        { name: 'Plant 1', condition: 'Water tomorrow' },
+        { name: 'Plant 2', condition: 'Fertilize today' },
+        // Add more plants as needed
+    ],
 };
 
-// Update statistics and plant list
-document.getElementById('activePlants').textContent = staticData.activePlants;
-document.getElementById('remindersSet').textContent = staticData.remindersSet;
-document.getElementById('plantsWithInfection').textContent = staticData.plantsWithInfection;
+// Update dashboard card counts
+document.getElementById('active-plants-count').textContent = data.activePlants;
+document.getElementById('active-reminders-count').textContent = data.activeReminders;
+document.getElementById('plants-on-diagnosis-count').textContent = data.plantsOnDiagnosis;
 
-const plantList = document.getElementById('plantList');
-staticData.plantList.forEach(plant => {
-    const li = document.createElement('li');
-    li.textContent = `${plant.name} - ${plant.status}`;
-    plantList.appendChild(li);
+// Create plant cards for plants needing attention
+const attentionNeededPlantsContainer = document.querySelector('.attention-needed-plants');
+data.attentionNeededPlants.forEach(plant => {
+    const plantCard = document.createElement('div');
+    plantCard.classList.add('plant-card');
+    plantCard.innerHTML = `
+        <img src="plant.jpg" alt="${plant.name}">
+        <h3>${plant.name}</h3>
+        <p>${plant.condition}</p>
+    `;
+    attentionNeededPlantsContainer.appendChild(plantCard);
 });
