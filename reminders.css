@@ -1,35 +1,36 @@
-/* Reset some default browser styles */
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set up a background color */
+/* Apply some basic styling to the body and fonts */
 body {
-    background-color: #e9e9e9;
     font-family: Arial, sans-serif;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
 }
 
-/* Style the header with the logo and navigation */
-header {
-    background-color: #4CAF50;
-    color: white;
+/* Style the header section */
+.header {
+    background-color: #00ac45; /* Change the color to #00ac45 */
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    z-index: 2;
 }
 
-.header .logo {
+.logo {
     font-size: 24px;
     font-weight: bold;
-    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .menu ul {
-    list-style-type: none;
+    list-style: none;
 }
 
 .menu ul li {
@@ -38,55 +39,46 @@ header {
 }
 
 .menu a {
-    color: white;
     text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
+    color: #fff;
+    font-weight: bold;
 }
 
-.menu a:hover {
-    color: #92c842;
-}
-
-/* Create a dashboard layout with left and right panels */
-main {
+/* Style the main content */
+.main {
     display: flex;
+    justify-content: space-between;
+    margin: 20px;
 }
 
 .left-panel {
-    background-color: #007830;
-    width: 250px;
-    position: fixed;
-    top: 70px; /* Adjust the top position to avoid header overlap */
-    bottom: 0;
-    box-shadow: 1px 1px 10px rgba(198, 189, 248, 0.825);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow-y: auto;
-}
-.nav-options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    width: 20%;
+    background-color: #f7f7f7;
     padding: 20px;
 }
 
-.left-panel .nav-options a {
+.nav-options a {
     display: block;
     margin: 10px 0;
     text-decoration: none;
     color: #333;
-    font-weight: 600;
-    transition: color 0.3s;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.left-panel .nav-options a:hover {
-    color: #fff;
+.active {
+    color: #00ac45; /* Change the active link color */
 }
 
-/* Add new styles for Reminders page */
+.right-panel {
+    width: 75%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Style the Set Reminders form */
 .right-panel h1 {
     font-size: 24px;
     margin-bottom: 20px;
