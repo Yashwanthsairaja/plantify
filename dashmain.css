@@ -65,6 +65,13 @@ main {
     justify-content: space-between;
     overflow-y: auto;
 }
+.nav-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
 
 .left-panel .nav-options a {
     display: block;
@@ -77,11 +84,4 @@ main {
 
 .left-panel .nav-options a:hover {
     color: #fff;
-}
-.nav-options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 20px;
 }
