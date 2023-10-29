@@ -53,8 +53,9 @@ main {
 }
 
 .left-panel {
-    background-color: #ffffff;
+    background-color: #007830;
     width: 250px;
+    height: 100%;
     padding: 20px;
 }
 
@@ -68,7 +69,7 @@ main {
 }
 
 .left-panel .nav-options a:hover {
-    color: #4CAF50;
+    color: #fff;
 }
 
 .right-panel {
