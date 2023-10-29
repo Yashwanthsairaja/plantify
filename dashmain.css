@@ -120,6 +120,38 @@ main {
 .plant-card h3 {
     font-size: 18px;
 }
+/* Your existing CSS here */
+
+/* Add new styles for plant cards */
+.plant-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.plant-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.plant-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.plant-card h3 {
+    font-size: 18px;
+}
+
+.plant-card p {
+    font-size: 14px;
+    color: #d9534f;
+}
 
 .plant-card p {
     font-size: 14px;
