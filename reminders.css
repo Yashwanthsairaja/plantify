@@ -1,0 +1,35 @@
+/* Your existing CSS here */
+
+/* Add new styles for Reminders page */
+.right-panel h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.reminder-form {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.reminder-form label,
+.reminder-form select,
+.reminder-form input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.reminder-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.reminder-form button:hover {
+    background-color: #45a049;
+}
