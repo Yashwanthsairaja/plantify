@@ -19,6 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    z-index: 2;
 }
 
 .header .logo {
@@ -56,12 +57,13 @@ main {
     background-color: #007830;
     width: 250px;
     position: fixed;
-    bottom: 0; /* Extend to the bottom of the screen */
+    top: 70px; /* Adjust the top position to avoid header overlap */
+    bottom: 0;
     box-shadow: 1px 1px 10px rgba(198, 189, 248, 0.825);
     display: flex;
-    flex-direction: column; /* Stack child elements vertically */
-    justify-content: space-between; /* Push items to the top and bottom */
-    overflow-y: auto; /* Add scrollbar if content overflows */
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
 }
 
 .left-panel .nav-options a {
@@ -162,4 +164,11 @@ main {
 .plant-card p {
     font-size: 14px;
     color: #d9534f;
+}
+.nav-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
 }
