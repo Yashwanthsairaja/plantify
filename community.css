@@ -11,3 +11,7 @@ body {
     background-color: #f7f7f7;
     padding: 40px 0;
 }
+
+.custom-bg-color {
+    background-color: #00ac45;
+}
