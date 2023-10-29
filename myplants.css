@@ -36,3 +36,205 @@
     font-size: 14px;
     color: #d9534f;
 }
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up a background color */
+body {
+    background-color: #e9e9e9;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header with the logo and navigation */
+header {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 2;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #92c842;
+}
+
+/* Create a dashboard layout with left and right panels */
+main {
+    display: flex;
+}
+
+.left-panel {
+    background-color: #007830;
+    width: 250px;
+    position: fixed;
+    top: 70px; /* Adjust the top position to avoid header overlap */
+    bottom: 0;
+    box-shadow: 1px 1px 10px rgba(198, 189, 248, 0.825);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+.left-panel .nav-options a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.left-panel .nav-options a:hover {
+    color: #fff;
+}
+
+.right-panel {
+    background-color: #f2f2f2;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Style the dashboard cards */
+.dashboard-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+/* Style the attention-needed plant cards */
+.plant-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.plant-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.plant-card h3 {
+    font-size: 18px;
+}
+/* Your existing CSS here */
+
+/* Add new styles for plant cards */
+.plant-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.plant-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.plant-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.plant-card h3 {
+    font-size: 18px;
+}
+
+.plant-card p {
+    font-size: 14px;
+    color: #d9534f;
+}
+
+.plant-card p {
+    font-size: 14px;
+    color: #d9534f;
+}
+.nav-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+/* Existing CSS styles for the dashboard */
+/* ... */
+
+.right-panel {
+    width: calc(100% - 250px);
+    padding: 30px 30px 30px 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: space-between; /* Distribute cards horizontally */
+}
+
+.card {
+    width: calc(33.33% - 20px); /* Adjust the width to create a grid of 3 cards in a row */
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 30, 87, 0.751);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.08);
+}
+
+/* ... */
