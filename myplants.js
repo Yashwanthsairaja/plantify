@@ -86,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
             plantCards.appendChild(card);
         });
     }
+    
 
     // Call the function to create plant cards when the page loads
     createPlantCards();
