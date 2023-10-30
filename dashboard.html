@@ -5,7 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantify Dashboard</title>
     <link rel="stylesheet" href="dashmain.css">
+    <style>
+        /* Additional CSS styles for the dashboard */
+        .right-panel {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
 
+        .dashboard-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .dashboard-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .dashboard-card p {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007830;
+        }
+
+        .dashboard-text-animation {
+            margin-top: 20px;
+            text-align: center;
+            animation: textAnimation 2s infinite alternate;
+        }
+
+        @keyframes textAnimation {
+            0% {
+                transform: scale(1);
+                color: #007830;
+            }
+            100% {
+                transform: scale(1.1);
+                color: #45a049;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -27,7 +71,23 @@
                 <a href="index.html">Logout</a>
             </div>
         </div>
-
+        <div class="right-panel">
+            <div class="dashboard-card">
+                <h3>Active Plants</h3>
+                <p id="active-plants-count">20</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Active Reminders</h3>
+                <p id="active-reminders-count">7</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Plants on Diagnosis</h3>
+                <p id="plants-on-diagnosis-count">3</p>
+            </div>
+            <div class="dashboard-text-animation">
+                <p>Keep your plants happy and healthy with Plantify!</p>
+            </div>
+        </div>
     </main>
 </body>
 </html>
