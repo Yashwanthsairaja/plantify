@@ -91,3 +91,4 @@ document.addEventListener("DOMContentLoaded", function() {
     // Call the function to create plant cards when the page loads
     createPlantCards();
 });
+
