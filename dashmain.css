@@ -85,3 +85,21 @@ main {
 .left-panel .nav-options a:hover {
     color: #fff;
 }
+.right-panel {
+    flex: 1; /* Allow the right panel to take the remaining width */
+    background-color: #fff; /* Set the background color of the right panel */
+    padding: 20px; /* Add some padding for spacing */
+
+    /* Center the content both horizontally and vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adjust styles for the content container */
+.content-container {
+    max-width: 600px; /* Set a maximum width for your content */
+    text-align: center; /* Center text within the container */
+}
+
