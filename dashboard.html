@@ -10,6 +10,10 @@
         .right-panel {
             background-color: #f5f5f5;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
         }
 
         .dashboard-card {
@@ -72,20 +76,22 @@
             </div>
         </div>
         <div class="right-panel">
-            <div class="dashboard-card">
-                <h3>Active Plants</h3>
-                <p id="active-plants-count">20</p>
-            </div>
-            <div class="dashboard-card">
-                <h3>Active Reminders</h3>
-                <p id="active-reminders-count">7</p>
-            </div>
-            <div class="dashboard-card">
-                <h3>Plants on Diagnosis</h3>
-                <p id="plants-on-diagnosis-count">3</p>
-            </div>
-            <div class="dashboard-text-animation">
-                <p>Keep your plants happy and healthy with Plantify!</p>
+            <div class="dashboard-container">
+                <div class="dashboard-card">
+                    <h3>Active Plants</h3>
+                    <p id="active-plants-count">20</p>
+                </div>
+                <div class="dashboard-card">
+                    <h3>Active Reminders</h3>
+                    <p id="active-reminders-count">7</p>
+                </div>
+                <div class="dashboard-card">
+                    <h3>Plants on Diagnosis</h3>
+                    <p id="plants-on-diagnosis-count">3</p>
+                </div>
+                <div class="dashboard-text-animation">
+                    <p>Keep your plants happy and healthy with Plantify!</p>
+                </div>
             </div>
         </div>
     </main>
