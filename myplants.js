@@ -22,7 +22,48 @@ document.addEventListener("DOMContentLoaded", function() {
             wateringDue: "1 day",
             fertilizerDue: "4 days",
         },
-        // Add more plant data here
+        {
+            name: "Peace Lily",
+            image: "plant4.jpg",
+            status: "Healthy",
+            wateringDue: "2 days",
+            fertilizerDue: "5 days",
+        },
+        {
+            name: "Snake Plant",
+            image: "plant5.jpg",
+            status: "Healthy",
+            wateringDue: "3 days",
+            fertilizerDue: "6 days",
+        },
+        {
+            name: "Bamboo Palm",
+            image: "plant6.jpg",
+            status: "Infection",
+            wateringDue: "1 day",
+            fertilizerDue: "4 days",
+        },
+        {
+            name: "ZZ Plant",
+            image: "plant7.jpg",
+            status: "Healthy",
+            wateringDue: "2 days",
+            fertilizerDue: "5 days",
+        },
+        {
+            name: "Jade Plant",
+            image: "plant8.jpg",
+            status: "Healthy",
+            wateringDue: "3 days",
+            fertilizerDue: "6 days",
+        },
+        {
+            name: "Rubber Plant",
+            image: "plant9.jpg",
+            status: "Infection",
+            wateringDue: "1 day",
+            fertilizerDue: "4 days",
+        },
     ];
 
     // Function to create plant cards
