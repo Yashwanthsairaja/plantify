@@ -8,22 +8,17 @@
 /* Apply some basic styling to the body and fonts */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('your-background-image.jpg'); /* Replace with your background image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #eee;
     margin: 0;
     padding: 0;
 }
 
 /* Style the header section */
 .header {
-    background-color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #00ac45;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .logo {
@@ -42,65 +37,60 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
 
 .menu a:hover {
     text-decoration: underline;
 }
 
-/* Style for the left panel */
-.left-panel {
-    background-color: #007830;
-    width: 250px;
-    position: fixed;
-    top: 70px;
-    bottom: 0;
-    box-shadow: 1px 1px 10px rgba(198, 189, 248, 0.825);
+/* Style the main content */
+main {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    overflow-y: auto;
+    margin: 20px;
 }
 
-.nav-options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+.left-panel {
+    width: 20%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
 }
 
-.left-panel .nav-options a {
+.left-panel a {
     display: block;
-    margin: 10px 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #00ac45;
     text-decoration: none;
+}
+
+.left-panel a.active {
     color: #333;
-    font-weight: 600;
-    transition: color 0.3s;
+    text-decoration: underline;
 }
 
-.left-panel .nav-options a:hover {
-    color: #fff;
-}
-
-/* Style for the right panel */
 .right-panel {
     width: 78%;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create a 3x3 grid */
-    gap: 20px;
 }
 
-/* Additional styling for plant cards (if needed) */
+.right-panel h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style the plant cards */
 .plant-card {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
+    margin-bottom: 20px;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -128,7 +118,7 @@ body {
     color: #333;
 }
 
-/* Additional styling for plant status badge (if needed) */
+/* Style the plant status badge */
 .badge {
     display: inline-block;
     padding: 6px 12px;
@@ -155,3 +145,30 @@ body {
 .fertilize {
     background-color: #337ab7;
 }
+.plant-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.plant-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('plant9.jpg'); /* Replace 'your-background-image.jpg' with the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
