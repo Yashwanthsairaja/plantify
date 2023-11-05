@@ -53,17 +53,20 @@ main {
 
 /* Style for the left panel */
 .left-panel {
-    background-color:#2bba65; /* Green background */
+    background-color: #00ac45; /* Green background */
     width: 20%;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    text-align: center; /* Center-align the content */
+    display: flex;
+    flex-direction: column; /* Display items vertically */
+    justify-content: center; /* Center-align vertically */
+    text-align: center; 
 }
 
 .left-panel a {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
