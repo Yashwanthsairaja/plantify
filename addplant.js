@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const addPlantForm = document.getElementById("add-plant-form");
+    const confirmationButton = document.getElementById("confirmation-button");
+
     addPlantForm.addEventListener("submit", function (e) {
         e.preventDefault();
 
@@ -21,10 +23,17 @@ document.addEventListener("DOMContentLoaded", function () {
             placement: placement,
             height: plantHeight,
         };
-        // You can save this data to your database in a real application
 
+        // Assuming you have a data storage mechanism, you can add the new plant to the collection.
+        // For now, we'll just simulate it by displaying a confirmation message.
+        alert("Plant added successfully!"); // You can replace this with your confirmation page logic.
+
+        // Clear the form after submission
+        addPlantForm.reset();
+    });
+
+    confirmationButton.addEventListener("click", function () {
         // Redirect to the confirmation page
         window.location.href = "confirmation.html";
     });
 });
-
