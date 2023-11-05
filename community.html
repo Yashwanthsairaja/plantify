@@ -9,16 +9,15 @@
     <link rel="stylesheet" href="community.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark custom-bg-color">
-       <a class="navbar-brand" href="#">Indoor Plant Lovers</a>
+        <a class="navbar-brand" href="#">Indoor Plant Lovers</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="dashboard.html">Home</a>
+                    <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Posts</a>
@@ -29,33 +28,14 @@
             </ul>
         </div>
     </nav>
- 
-    <!-- Post List Section -->
+
     <section id="post-list" class="container mt-5">
         <h2 class="text-center mb-4">Latest Posts</h2>
         <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">New Plant Enthusiast - Greetings to the Community!</h5>
-                        <p class="card-text">Hey everyone, I'm a new plant enthusiast and I'm excited to join this community. I recently started my plant collection and would love to learn from all of you. Any tips for beginners?</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Sharing My Blooming Succulent Collection</h5>
-                        <p class="card-text">Hi Plantify community! I just wanted to share the joy of my succulent collection that's in full bloom right now. These little guys bring so much happiness. Anyone else here love succulents as much as I do?</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
+            <!-- Posts will be added here using JavaScript -->
         </div>
     </section>
- 
-    <!-- Create Post Section -->
+
     <section id="create-post" class="container mt-5">
         <h2 class="text-center mb-4">Create a New Post</h2>
         <form id="createPostForm">
@@ -67,11 +47,10 @@
                 <label for="postContent">Content:</label>
                 <textarea class="form-control" id="postContent" placeholder="Enter post content" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Create Post</button>
+            <button type="submit" class="btn btn-custom">Create Post</button>
         </form>
     </section>
- 
-    <!-- Bootstrap & jQuery JS -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="community.js"></script>
