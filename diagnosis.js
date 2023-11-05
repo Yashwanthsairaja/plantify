@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // Simulate a delay before showing the download message
         setTimeout(function() {
             downloadReport.style.display = "block";
-        }, 4000);
+        }, 4000); // This will display the download message after 4 seconds
     });
 });
-
