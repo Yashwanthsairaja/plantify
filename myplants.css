@@ -52,25 +52,36 @@ main {
 }
 
 .left-panel {
-    width: 20%;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    background-color: #007830;
+    width: 250px;
+    position: fixed;
+    top: 70px; /* Adjust the top position to avoid header overlap */
+    bottom: 0;
+    box-shadow: 1px 1px 10px rgba(198, 189, 248, 0.825);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+.nav-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
     padding: 20px;
 }
 
-.left-panel a {
+.left-panel .nav-options a {
     display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #00ac45;
+    margin: 10px 0;
     text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
-.left-panel a.active {
-    color: #333;
-    text-decoration: underline;
-}
+.left-panel .nav-options a:hover {
+    color: #fff;
 
 .right-panel {
     width: 78%;
