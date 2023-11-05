@@ -1,0 +1,135 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply some basic styling to the body and fonts */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header section */
+.header {
+    background-color: #00ac45;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Style the main content */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.left-panel {
+    width: 20%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.left-panel a {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #00ac45;
+    text-decoration: none;
+}
+
+.left-panel a.active {
+    color: #333;
+    text-decoration: underline;
+}
+
+.right-panel {
+    width: 78%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.right-panel h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #00ac45;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007830;
+}
+
+button, input[type="submit"] {
+    text-transform: uppercase;
+}
+
+/* Style for the confirmation page (confirmation.html) */
+main a {
+    display: inline-block;
+    background-color: #00ac45;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+main a:hover {
+    background-color: #007830;
+}
