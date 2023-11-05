@@ -8,17 +8,22 @@
 /* Apply some basic styling to the body and fonts */
 body {
     font-family: Arial, sans-serif;
-    background-color: #eee;
+    background-image: url('your-background-image.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
 }
 
 /* Style the header section */
 .header {
-    background-color: #00ac45;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -37,25 +42,19 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #fff;
+    color: #333;
 }
 
 .menu a:hover {
     text-decoration: underline;
 }
 
-/* Style the main content */
-main {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-}
-
+/* Style for the left panel */
 .left-panel {
     background-color: #007830;
     width: 250px;
     position: fixed;
-    top: 70px; /* Adjust the top position to avoid header overlap */
+    top: 70px;
     bottom: 0;
     box-shadow: 1px 1px 10px rgba(198, 189, 248, 0.825);
     display: flex;
@@ -63,6 +62,7 @@ main {
     justify-content: space-between;
     overflow-y: auto;
 }
+
 .nav-options {
     display: flex;
     flex-direction: column;
@@ -82,26 +82,26 @@ main {
 
 .left-panel .nav-options a:hover {
     color: #fff;
+}
 
+/* Style for the right panel */
 .right-panel {
     width: 78%;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
 }
 
-.right-panel h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-/* Style the plant cards */
+/* Additional styling for plant cards (if needed) */
 .plant-card {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin-bottom: 20px;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -129,7 +129,7 @@ main {
     color: #333;
 }
 
-/* Style the plant status badge */
+/* Additional styling for plant status badge (if needed) */
 .badge {
     display: inline-block;
     padding: 6px 12px;
@@ -156,30 +156,3 @@ main {
 .fertilize {
     background-color: #337ab7;
 }
-.plant-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-.plant-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url('plant9.jpg'); /* Replace 'your-background-image.jpg' with the path to your background image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.header {
-    background-color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
