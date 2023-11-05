@@ -1,7 +1,12 @@
 $(document).ready(function() {
     $('#createPostForm').submit(function(e) {
         e.preventDefault();
-        alert('Post created successfully!');
-        // Code to submit the form data to the server and handle the response
-    });
-});
+
+        const postTitle = $('#postTitle').val();
+        const postContent = $('#postContent').val();
+
+        const newPost = `
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="
