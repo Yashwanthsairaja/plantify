@@ -12,6 +12,9 @@
         <div class="menu">
             <ul>
                 <li><a href="myplants.html">My Plants</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="reminders.html">Reminders</a></li>
+                <li><a href="index.html">Logout</a></li>
             </ul>
         </div>
     </header>
@@ -20,55 +23,58 @@
             <div class="nav-options">
                 <a href="myplants.html">My Plants</a>
                 <a href="reminders.html">Set Reminders</a>
-                <a href="addplant.html" class="active">Add Plant</a>
             </div>
         </div>
         <div class="right-panel">
             <h1>Add Plant</h1>
-            <form>
-                <label for="plantName">Plant Name:</label>
-                <input type="text" id="plantName" name="plantName" required>
-
-                <label for="wateringNeed">Watering Need:</label>
-                <select id="wateringNeed" name="wateringNeed">
-                    <option value="0">Select</option>
-                    <option value="1">Once a week</option>
-                    <option value="2">Twice a week</option>
-                    <option value="3">Three times a week</option>
-                    <!-- Add more options as needed -->
-                </select>
-
-                <label for="sunlightNeed">Sunlight Need:</label>
-                <select id="sunlightNeed" name="sunlightNeed">
-                    <option value="0">Select</option>
-                    <option value="1">Full sun</option>
-                    <option value="2">Partial sun</option>
-                    <option value="3">Shade</option>
-                    <!-- Add more options as needed -->
-                </select>
-
-                <label for="fertilizerNeed">Fertilizer Need:</label>
-                <select id="fertilizerNeed" name="fertilizerNeed">
-                    <option value="0">Select</option>
-                    <option value="1">Once a month</option>
-                    <option value="2">Twice a month</option>
-                    <!-- Add more options as needed -->
-                </select>
-
-                <label for="placementInHome">Placement in Home:</label>
-                <select id="placementInHome" name="placementInHome">
-                    <option value="0">Select</option>
-                    <option value="1">Living Room</option>
-                    <option value="2">Bedroom</option>
-                    <option value="3">Kitchen</option>
-                    <!-- Add more options as needed -->
-                </select>
-
-                <label for="plantHeight">Plant Height (in inches):</label>
-                <input type="number" id="plantHeight" name="plantHeight" required>
-
-                <button type="button" id="addPlantButton">Add Plant</button>
-            </form>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="plant-name">Plant Name:</label>
+                    <input type="text" id="plant-name" name="plant-name" placeholder="Enter plant name">
+                </div>
+                <div class="form-group">
+                    <label for="watering-need">Watering Need:</label>
+                    <select id="watering-need" name="watering-need">
+                        <option value="once">Once a week</option>
+                        <option value="twice">Twice a week</option>
+                        <option value="daily">Daily</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sunlight-need">Sunlight Need:</label>
+                    <select id="sunlight-need" name="sunlight-need">
+                        <option value="low">Low</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="high">High</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fertilizer-need">Fertilizer Need:</label>
+                    <select id="fertilizer-need" name="fertilizer-need">
+                        <option value="monthly">Monthly</option>
+                        <option value="bi-weekly">Bi-Weekly</option>
+                        <option value="weekly">Weekly</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="placement">Placement in Home:</label>
+                    <select id="placement" name="placement">
+                        <option value="living-room">Living Room</option>
+                        <option value="kitchen">Kitchen</option>
+                        <option value="bedroom">Bedroom</option>
+                        <option value="patio">Patio</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="plant-height">Plant Height (inches):</label>
+                    <input type="number" id="plant-height" name="plant-height" placeholder="Enter plant height">
+                </div>
+                <button id="add-plant-button">Add Plant</button>
+            </div>
         </div>
     </main>
     <script src="addplant.js"></script>
