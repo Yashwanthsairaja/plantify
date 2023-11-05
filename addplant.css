@@ -26,78 +26,44 @@ body {
     font-weight: bold;
 }
 
-.menu ul {
-    list-style: none;
-}
-
-.menu li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.menu a:hover {
-    text-decoration: underline;
-}
-
 /* Style the main content */
 main {
     display: flex;
-    justify-content: space-between;
-    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.left-panel {
-    width: 20%;
+.add-plant-form {
+    width: 80%;
+    max-width: 400px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
+    text-align: center;
 }
 
-.left-panel a {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #00ac45;
-    text-decoration: none;
-}
-
-.left-panel a.active {
-    color: #333;
-    text-decoration: underline;
-}
-
-.right-panel {
-    width: 78%;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-}
-
-.right-panel h1 {
+h1 {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-form {
-    max-width: 400px;
-    margin: 0 auto;
+.form-group {
+    margin-bottom: 20px;
 }
 
 label {
+    display: block;
     font-weight: bold;
+    text-align: left;
 }
 
-input {
+input,
+select {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -109,34 +75,15 @@ button {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 button:hover {
     background-color: #007830;
 }
 
-button, input[type="submit"] {
-    text-transform: uppercase;
-}
-
-/* Style for the confirmation page (confirmation.html) */
-main a {
-    display: inline-block;
-    background-color: #00ac45;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-main a:hover {
-    background-color: #007830;
-}
-
 /* Style for dropdowns */
 .form-group select {
-    width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -144,6 +91,7 @@ main a:hover {
     color: #333;
     font-size: 16px;
     transition: border-color 0.3s, box-shadow 0.3s;
+    width: 100%;
 }
 
 .form-group select:focus {
@@ -152,7 +100,7 @@ main a:hover {
     outline: none;
 }
 
-/* Style the dropdown arrow */
+/* Style for the dropdown arrow */
 .form-group select::after {
     content: '\25BC'; /* Downward-pointing arrow */
     position: absolute;
@@ -174,5 +122,3 @@ main a:hover {
     background-color: #00ac45;
     color: #fff;
 }
-
-
