@@ -3,36 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Plants - Plantify</title>
-    <link rel="stylesheet" href="myplants.css">
+    <title>Add Plant - Plantify</title>
+    <link rel="stylesheet" href="addplant.css">
 </head>
 <body>
     <header class="header">
         <div class="logo">Plantify</div>
         <div class="menu">
             <ul>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="addplant.html">Add Plant</a></li>
-                <li><a href="reminders.html">Reminders</a></li>
-                <li><a href="index.html">Logout</a></li>
+                <li><a href="myplants.html">My Plants</a></li>
             </ul>
         </div>
     </header>
     <main>
         <div class="left-panel">
             <div class="nav-options">
-                <a href="myplants.html" class="active">My Plants</a>
+                <a href="myplants.html">My Plants</a>
                 <a href="reminders.html">Set Reminders</a>
+                <a href="addplant.html" class="active">Add Plant</a>
             </div>
         </div>
         <div class="right-panel">
-            <h1>My Plants</h1>
-            <div class="plant-cards" id="plant-cards">
-                <!-- Plant cards will be generated here dynamically using JavaScript -->
-            </div>
+            <h1>Add Plant</h1>
+            <form>
+                <div class="form-group">
+                    <label for="plantName">Plant Name:</label>
+                    <input type="text" id="plantName" name="plantName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="wateringNeed">Watering Need:</label>
+                    <select id="wateringNeed" name="wateringNeed">
+                        <option value="0">Select</option>
+                        <option value="1">Once a week</option>
+                        <option value="2">Twice a week</option>
+                        <option value="3">Three times a week</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="sunlightNeed">Sunlight Need:</label>
+                    <select id="sunlightNeed" name="sunlightNeed">
+                        <option value="0">Select</option>
+                        <option value="1">Full sun</option>
+                        <option value="2">Partial sun</option>
+                        <option value="3">Shade</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fertilizerNeed">Fertilizer Need:</label>
+                    <select id="fertilizerNeed" name="fertilizerNeed">
+                        <option value="0">Select</option>
+                        <option value="1">Once a month</option>
+                        <option value="2">Twice a month</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="placementInHome">Placement in Home:</label>
+                    <select id="placementInHome" name="placementInHome">
+                        <option value="0">Select</option>
+                        <option value="1">Living Room</option>
+                        <option value="2">Bedroom</option>
+                        <option value="3">Kitchen</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="plantHeight">Plant Height (in inches):</label>
+                    <input type="number" id="plantHeight" name="plantHeight" required>
+                </div>
+
+                <button type="button" id="addPlantButton">Add Plant</button>
+            </form>
         </div>
     </main>
-    <script src="myplants.js"></script>
+    <script src="addplant.js"></script>
 </body>
 </html>
-
