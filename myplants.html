@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Plant - Plantify</title>
-    <link rel="stylesheet" href="addplant.css">
+    <title>My Plants - Plantify</title>
+    <link rel="stylesheet" href="myplants.css">
 </head>
 <body>
     <header class="header">
@@ -12,7 +12,7 @@
         <div class="menu">
             <ul>
                 <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="myplants.html">My Plants</a></li>
+                <li><a href="addplant.html">Add Plant</a></li>
                 <li><a href="reminders.html">Reminders</a></li>
                 <li><a href="index.html">Logout</a></li>
             </ul>
@@ -21,63 +21,17 @@
     <main>
         <div class="left-panel">
             <div class="nav-options">
-                <a href="myplants.html">My Plants</a>
-                <a href="addplant.html" class="active">Add Plants</a>
+                <a href="myplants.html" class="active">My Plants</a>
+                <a href="reminders.html">Set Reminders</a>
             </div>
         </div>
         <div class="right-panel">
-            <h1>Add a New Plant</h1>
-            <form class="add-plant-form">
-                <div class="form-group">
-                    <label for="plant-name">Plant Name:</label>
-                    <input type="text" id="plant-name" name="plant-name" required>
-                </div>
-                <div class="form-group">
-                    <label for="watering-need">Watering Need:</label>
-                    <select id="watering-need" name="watering-need">
-                        <option value="once">Once a week</option>
-                        <option value="twice">Twice a week</option>
-                        <option value="daily">Daily</option>
-                        <!-- Add more options as needed -->
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="sunlight-need">Sunlight Need:</label>
-                    <select id="sunlight-need" name="sunlight-need">
-                        <option value="low">Low Light</option>
-                        <option value="moderate">Moderate Light</option>
-                        <option value="high">High Light</option>
-                        <!-- Add more options as needed -->
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="fertilizer-need">Fertilizer Need:</label>
-                    <select id="fertilizer-need" name="fertilizer-need">
-                        <option value="monthly">Monthly</option>
-                        <option value="biweekly">Bi-weekly</option>
-                        <option value="weekly">Weekly</option>
-                        <!-- Add more options as needed -->
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="placement">Placement in Home:</label>
-                    <select id="placement" name="placement">
-                        <option value="living-room">Living Room</option>
-                        <option value="bedroom">Bedroom</option>
-                        <option value="kitchen">Kitchen</option>
-                        <option value="bathroom">Bathroom</option>
-                        <option value="office">Office</option>
-                        <!-- Add more options as needed -->
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="height-inches">Plant Height (in inches):</label>
-                    <input type="number" id="height-inches" name="height-inches" required>
-                </div>
-                <button type="submit">Add Plant</button>
-            </form>
+            <h1>My Plants</h1>
+            <div class="plant-cards" id="plant-cards">
+                <!-- Plant cards will be generated here dynamically using JavaScript -->
+            </div>
         </div>
     </main>
-    <script src="addplant.js"></script>
+    <script src="myplants.js"></script>
 </body>
 </html>
