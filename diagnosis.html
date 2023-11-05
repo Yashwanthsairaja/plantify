@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="diagnosis.css">
 </head>
 <body>
+    <div class="background-video">
+        <video autoplay muted loop id="background-video">
+            <source src="background-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
     <header class="header">
         <div class="logo"><a href="index.html">Plantify</a></div>
     </header>
@@ -16,12 +22,18 @@
             <input type="file" id="plant-image" accept="image/*">
             <textarea id="diagnosis-description" placeholder="Enter description"></textarea>
             <button id="diagnose-btn">Diagnose</button>
-        </div>
-        <div class="diagnosis-report" id="diagnosis-report">
-            <!-- Report content will be displayed here -->
+            <div id="diagnosis-report" class="hidden">
+                <!-- Report content will be displayed here -->
+                <h2>Diagnosis Report</h2>
+                <p>Image and description sent for processing.</p>
+                <p>Awaiting results...</p>
+                <div id="download-report" class="hidden">
+                    <p>Report is ready for download.</p>
+                    <a href="diagnosis-report.pdf" download>Download Report</a>
+                </div>
+            </div>
         </div>
     </main>
     <script src="diagnosis.js"></script>
 </body>
 </html>
-
