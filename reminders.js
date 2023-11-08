@@ -40,3 +40,4 @@ window.onload = populatePlantSelect;
 // Add a click event listener to the "Set Reminder" button
 const setReminderButton = document.getElementById("set-reminder-btn");
 setReminderButton.addEventListener("click", setReminder);
+
