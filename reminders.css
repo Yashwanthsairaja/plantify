@@ -7,8 +7,8 @@
 
 /* Apply some basic styling to the body and fonts */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
 }
@@ -26,7 +26,6 @@ body {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    text-decoration: none;
 }
 
 .menu ul {
@@ -45,7 +44,7 @@ body {
 }
 
 /* Style the main content */
-main {
+.container {
     display: flex;
     justify-content: space-between;
     margin: 20px;
@@ -53,7 +52,9 @@ main {
 
 .left-panel {
     width: 20%;
-    background-color: #f7f7f7;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
 }
 
@@ -73,9 +74,10 @@ main {
 .right-panel {
     width: 75%;
     background-color: #fff;
-    padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
+    padding: 20px;
+    margin-left: 10px;
 }
 
 /* Style the Set Reminders form */
@@ -85,41 +87,29 @@ main {
 }
 
 .reminder-form {
-    background-color: #fff;
+    background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 .reminder-form label,
 .reminder-form select,
 .reminder-form input {
     display: block;
-    margin-bottom: 20px;
-    font-size: 18px; /* Increase font size for better readability */
-}
-
-.reminder-form select,
-.reminder-form input {
-    width: 100%; /* Make input fields full-width */
-    padding: 10px; /* Add some padding for better spacing */
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .reminder-form button {
-    background-color: #00ac45; /* Change button color */
+    background-color: #00ac45;
     color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 15px 30px; /* Increase padding for a larger button */
+    border-radius: 4px;
+    padding: 10px 20px;
     cursor: pointer;
-    font-size: 20px; /* Increase font size */
-    transition: background-color 0.3s;
 }
 
 .reminder-form button:hover {
-    background-color: #009540; /* Change button color on hover */
+    background-color: #00973d;
 }
