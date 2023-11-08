@@ -16,4 +16,27 @@ const plantData = [
 function populatePlantSelect() {
     const plantSelect = document.getElementById("plant-select");
 
-    plant
+    plantData.forEach((plant) => {
+        const option = document.createElement("option");
+        option.value = plant.name;
+        option.text = plant.name;
+        plantSelect.appendChild(option);
+    });
+}
+
+// Function to handle setting a reminder
+function setReminder() {
+    const plantSelect = document.getElementById("plant-select");
+    const reminderType = document.getElementById("reminder-type");
+    const dueDate = document.getElementById("due-date").value;
+
+    // Replace this with your reminder setting logic
+    alert(`Reminder set for ${plantSelect.value} to ${reminderType.value} on ${dueDate}`);
+}
+
+// Populate plant select options when the page loads
+window.onload = populatePlantSelect;
+
+// Add a click event listener to the "Set Reminder" button
+const setReminderButton = document.getElementById("set-reminder-btn");
+setReminderButton.addEventListener("click", setReminder);
