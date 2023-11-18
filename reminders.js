@@ -35,8 +35,10 @@ function setReminder() {
 }
 
 // Populate plant select options when the page loads
-window.onload = populatePlantSelect;
+window.onload = function () {
+    populatePlantSelect();
 
-// Add a click event listener to the "Set Reminder" button
-const setReminderButton = document.getElementById("set-reminder-btn");
-setReminderButton.addEventListener("click", setReminder);
+    // Add a click event listener to the "Set Reminder" button
+    const setReminderButton = document.getElementById("set-reminder-btn");
+    setReminderButton.addEventListener("click", setReminder);
+};
