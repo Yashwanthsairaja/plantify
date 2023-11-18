@@ -42,3 +42,4 @@ window.onload = function () {
     const setReminderButton = document.getElementById("set-reminder-btn");
     setReminderButton.addEventListener("click", setReminder);
 };
+
