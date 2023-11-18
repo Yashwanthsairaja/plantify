@@ -9,39 +9,35 @@
 </head>
 <body>
     <main class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="left-panel">
-                    <div class="nav-options">
-                        <a href="dashboard.html">Dashboard</a>
-                        <a href="myplants.html">My Plants</a>
-                        <a href="reminders.html" class="active">Set Reminders</a>
+        <div class="content">
+            <div class="form-panel">
+                <h1>Set Reminders</h1>
+                <div class="reminder-form">
+                    <div class="form-group">
+                        <label for="plant-select">Select a Plant:</label>
+                        <select id="plant-select" class="custom-select">
+                            <!-- Add plant options here -->
+                        </select>
                     </div>
+                    <div class="form-group">
+                        <label for="reminder-type">Select Reminder Type:</label>
+                        <select id="reminder-type" class="custom-select">
+                            <option value="watering">Watering</option>
+                            <option value="fertilizing">Fertilizing</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="due-date">Due Date:</label>
+                        <input type="date" id="due-date" class="form-control">
+                    </div>
+                    <button id="set-reminder-btn" class="btn btn-success btn-block">Set Reminder</button>
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="right-panel">
-                    <h1>Set Reminders</h1>
-                    <div class="reminder-form">
-                        <div class="form-group">
-                            <label for="plant-select">Select a Plant:</label>
-                            <select id="plant-select" class="custom-select">
-                                <!-- Add plant options here -->
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="reminder-type">Select Reminder Type:</label>
-                            <select id="reminder-type" class="custom-select">
-                                <option value="watering">Watering</option>
-                                <option value="fertilizing">Fertilizing</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="due-date">Due Date:</label>
-                            <input type="date" id="due-date" class="form-control">
-                        </div>
-                        <button id="set-reminder-btn" class="btn btn-success btn-block">Set Reminder</button>
-                    </div>
+            <div class="nav-panel">
+                <div class="nav-options">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="myplants.html">My Plants</a>
+                    <a href="reminders.html" class="active">Set Reminders</a>
                 </div>
             </div>
         </div>
