@@ -10,6 +10,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    margin: 0;
 }
 
 /* Style the header section */
@@ -42,9 +43,10 @@ body {
 /* Style the main content */
 .container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     margin: 20px;
 }
 
