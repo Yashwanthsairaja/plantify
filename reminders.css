@@ -22,38 +22,17 @@ body {
     margin: 20px;
 }
 
-.left-panel {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
+.content {
+    display: flex;
 }
 
-.nav-options a {
-    display: block;
-    margin: 10px 0;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.active {
-    color: #00ac45;
-}
-
-.right-panel {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #ddd;
-    border-radius: 8px;
+.form-panel {
+    width: 60%;
     padding: 20px;
 }
 
 /* Style the Set Reminders form */
-.right-panel h1 {
+.form-panel h1 {
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -65,13 +44,8 @@ body {
     padding: 20px;
 }
 
-.reminder-form label,
-.reminder-form select,
-.reminder-form input {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #333;
+.form-group {
+    margin-bottom: 20px;
 }
 
 .custom-select select {
@@ -108,5 +82,30 @@ body {
 }
 
 .reminder-form button:hover {
+    background-color: #009240;
+}
+
+.nav-panel {
+    width: 40%;
+}
+
+.nav-options {
+    background-color: #00ac45;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.nav-options a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.active {
+    color: #fff;
     background-color: #009240;
 }
